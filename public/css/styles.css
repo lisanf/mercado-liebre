@@ -1,11 +1,29 @@
+/* BODY */
+
 body{
     font-family: 'Roboto', sans-serif;
 }
+
+/* HEADER */
 
 header{
     background-color: #EAC926;
     background-size: cover;
 }
+
+.navbar ul li {
+    list-style-type: none;
+}
+
+.login-bar ul li {
+    list-style-type: none;
+}
+
+.menu button {
+    background-color: #1259c3;;;
+}
+
+/* MAIN */
 
 main{
     background-color: #ebebeb;
@@ -35,3 +53,4 @@ p{
 }
 
 
+/* FOOTER */
