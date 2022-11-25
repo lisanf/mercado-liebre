@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/ccb79c327a.js" crossorigin="anonymous"></script>
+
 
 </head>
 
@@ -24,15 +25,13 @@
         <div class="search-bar">
             <form action="/action_page.html">
                 <label for="search">Busqueda:</label>
-                <i class="fa-solid fa-magnifying-glass"></i>
                 <input type="text" id="search" name="search">
                 <button class="search-button" onclick="alert('Buscando...')"> <i class="fa fa-search"></i> </button>
             </form>
         </div>
 
-        <i class="fas fa-hand-holding-usd"></i>
         <div>
-        Comprá en cuotas y sin tarjeta de crédito 
+            <i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito 
         </div>
 
         <nav class="navbar">
@@ -57,6 +56,10 @@
         </nav>
         <br> 
         
+        <nav class="banner">    
+            <a href="path.resolve(__dirname, './views/home.html')"><img src="/images/img-home-banner.jpg" alt="Logo"></a>
+        </nav> 
+
     </header>
     
     <main>
