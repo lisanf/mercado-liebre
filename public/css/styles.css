@@ -1,18 +1,32 @@
-/* BODY */
+/*////////////////////////////////////////////////////////////*/
+/*/////////////////// BODY ///////////////////////////////////*/
+/*////////////////////////////////////////////////////////////*/
 
 body{
     font-family: 'Roboto', sans-serif;
 }
 
-/* HEADER */
+/*////////////////////////////////////////////////////////////*/
+/*/////////////////// HEADER /////////////////////////////////*/
+/*////////////////////////////////////////////////////////////*/
 
 header{
     background-color: #EAC926;
     background-size: cover;
+    margin: auto;
+}
+
+header nav a img {
+    padding: 15px;
 }
 
 .search-bar{
     text-align: center;
+}
+
+.cuotas-promo{
+    text-align: center;
+    padding: 15px;
 }
 
 .navbar ul li {
@@ -29,6 +43,7 @@ header{
 
 .menu button {
     background-color: #1259c3;
+    border-radius: 25%;
 }
 
 .banner {
@@ -36,13 +51,14 @@ header{
     height: 100%;
 }
 
-/* MAIN */
+/*////////////////////////////////////////////////////////////*/
+/*///////////////////// MAIN /////////////////////////////////*/
+/*////////////////////////////////////////////////////////////*/
 
 main{
     background-color: #ebebeb;
     width: 90%;
     margin: auto;
-
 }
 
 main section{
@@ -58,6 +74,10 @@ main section article{
 main section article div {
     border: solid 1px #ebebeb;
     padding: 15px;
+}
+
+main section article img {
+    width: 90%;
 }
 
 .circleBase {
@@ -78,34 +98,98 @@ main section article div {
     color: #39b54a 
 }
 
+/*////////////////////////////////////////////////////////////*/
+/*/////////////////// FOOTER /////////////////////////////////*/
+/*////////////////////////////////////////////////////////////*/
 
-/* FOOTER */
 
 footer{
-    background-color: #ebebeb;
+    background-color: white;
     margin: auto;
-
+    color: #666;
+    padding: 10px;
 }
 
 footer section{
     background-color: white;
-    padding: 15px;
     text-align: center;
+}
+
+footer section h3 {
+    font-size: 24px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 0px;
 }
 
 footer section p {
     font-size: 12px;
-    padding: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    margin-top: 0px;
+}
+
+.copyright {
+    font-size: 12px;
+    text-align: left;
 }
 
 .fa-credit-card{
-    color: #0a6eda;;
+    color: #0a6eda;
+    font-size: 2em;
+    margin-bottom: 10px;
+    padding-top: 30px;
 }
 
 .fa-gift{
-    color: #0a6eda;;
+    color: #0a6eda;
+    font-size: 2em;
+    margin-bottom: 10px;
+    padding-top: 15px;
 }
 
 .fa-user-shield{
-    color: #0a6eda;;
+    color: #0a6eda;
+    font-size: 2em;
+    margin-bottom: 10px;
+    padding-top: 15px;
+
+}
+
+@media (min-width: 361px) {
+    .descripciones{
+        display: none;
+    }
+    .navbar{
+        display: none;
+    }
+
+    .login-bar {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    
+    .descripciones{
+        display: block;
+    }
+
+    .navbar{
+        display: block;
+    }
+
+    .login-bar {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    
 }
