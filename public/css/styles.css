@@ -40,24 +40,72 @@ header{
 
 main{
     background-color: #ebebeb;
+    width: 90%;
+    margin: auto;
 
 }
 
-main article{
+main section{
+    padding: 15px;
+}
+
+
+main section article{
     background-color: white;
+    margin-bottom: 10px;
 }
 
-
-/*
-
-.search-bar{
-    text-align: center;
+main section article div {
+    border: solid 1px #ebebeb;
+    padding: 15px;
 }
 
-
-.menu{
-    text-align: center;
+.circleBase {
+    border-radius: 50%;
 }
-*/
+
+.circle1 {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #39b54a;
+}
+
+.fa-truck {
+    color: #39b54a;
+}
+
+.descuentos{
+    color: #39b54a 
+}
+
 
 /* FOOTER */
+
+footer{
+    background-color: #ebebeb;
+    margin: auto;
+
+}
+
+footer section{
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+footer section p {
+    font-size: 12px;
+    padding: 15px;
+}
+
+.fa-credit-card{
+    color: #0a6eda;;
+}
+
+.fa-gift{
+    color: #0a6eda;;
+}
+
+.fa-user-shield{
+    color: #0a6eda;;
+}
