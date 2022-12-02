@@ -1,3 +1,11 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+
+
 /*////////////////////////////////////////////////////////////*/
 /*/////////////////// BODY ///////////////////////////////////*/
 /*////////////////////////////////////////////////////////////*/
@@ -14,6 +22,10 @@ header{
     background-color: #EAC926;
     background-size: cover;
     margin: auto;
+}
+
+.bloque-header1 {
+    padding: 15px;
 }
 
 header nav a img {
@@ -62,15 +74,13 @@ main section{
     padding: 15px;
 }
 
-
 main section article{
     background-color: white;
     margin-bottom: 10px;
 }
 
-main section article div {
+main section article  .producto {
     border: solid 1px #ebebeb;
-    padding: 15px;
 }
 
 main section article img {
@@ -78,22 +88,47 @@ main section article img {
     max-width: 600px;
 }
 
+.box-producto{
+    border: solid 1px #ebebeb;
+    padding: 10px;
+}
+
 .circleBase {
     border-radius: 50%;
 }
 
 .circle1 {
-    width: 15px;
-    height: 15px;
+    display: flex;
+    justify-items: center;
+    width: 30px;
+    height: 30px;
     border: 1px solid #39b54a;
+}
+
+.circle1 i {
+    margin: auto;
 }
 
 .fa-truck {
     color: #39b54a;
+    align-self: center;
+    justify-self: center;
 }
 
 .descuentos{
     color: #39b54a 
+}
+
+.precio-descuento {
+    display: flex;
+}
+
+.precios{
+    width: 30%;
+}
+
+.descuentos{
+    width: 70%;
 }
 
 /*////////////////////////////////////////////////////////////*/
@@ -155,7 +190,19 @@ footer section p {
 
 }
 
-@media (min-width: 361px) {
+@media (min-width: 0px) {
+
+    .bloque-header1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .bloque-header1-componentes {
+        width: 50%;
+    }
+
+
     .descripciones{
         display: none;
     }
@@ -166,6 +213,17 @@ footer section p {
     .login-bar {
         display: none;
     }
+
+    main section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .producto{
+        width: 80%;
+    }
+
 }
 
 @media (min-width: 769px) {
@@ -189,5 +247,25 @@ footer section p {
     main section article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
+
+    main section{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .producto{
+        width: 40%;
+    }
     
+}
+
+@media (min-width: 992px){
+    main section{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .producto{
+        width: 20%;
+    }
 }
