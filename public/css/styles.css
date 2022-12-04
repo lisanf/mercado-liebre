@@ -70,6 +70,11 @@ main{
     margin: auto;
 }
 
+h3 {
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
 main section{
     padding: 15px;
 }
@@ -207,25 +212,30 @@ footer section p {
         width: 50%;
     }
 
-
     .descripciones{
         display: none;
     }
-    .navbar{
-        display: none;
-    }
-
-    .login-bar {
+    .bloque-header2 {
         display: none;
     }
 
     main section{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     .producto{
+        width: 80%;
+    }
+
+    .info-general {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .item-footer{
         width: 80%;
     }
 
@@ -237,12 +247,29 @@ footer section p {
         display: block;
     }
 
-    .navbar{
-        display: block;
+    .bloque-header2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 10px;
     }
 
-    .login-bar {
-        display: block;
+    .navbar-ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 10px;
+    }
+
+    .login-bar-ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 10px;
+    }
+
+    li {
+        margin: 10px;
     }
 
     .menu {
@@ -261,10 +288,47 @@ footer section p {
     .producto{
         width: 40%;
     }
+
+    .info-general {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .item-footer{
+        width: 40%;
+    }
     
 }
 
 @media (min-width: 992px){
+
+    .bloque-header2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 10px;
+        
+    }
+
+    .navbar-ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 10px;
+    }
+
+    li {
+        margin: 10px;
+    }
+
+    .login-bar-ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 10px;
+    }
+
     main section{
         display: flex;
         flex-wrap: wrap;
@@ -273,4 +337,15 @@ footer section p {
     .producto{
         width: 20%;
     }
+
+    .info-general {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .item-footer{
+        width: 30%;
+    }
+
 }
