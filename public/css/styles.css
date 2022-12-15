@@ -32,9 +32,34 @@ header nav a img {
     width: 100%;
 }
 
-.search-bar{
-    text-align: center;
-}
+
+    .search-bar {
+        width: 30%;
+    }
+    
+    .search-bar {
+        background-color: #ffffff;
+        width: 45%;
+        align-self: center;
+        display: flex;
+        border-radius: 4px;
+    }
+
+    .search-bar form {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 0.5rem;
+    }
+
+    .campo-busqueda input {
+        width: 100%;
+    }
+    
+    input {
+        display: block;
+    }
+
 
 .cuotas-promo{
     text-align: center;
@@ -58,6 +83,11 @@ header nav a img {
     border-radius: 25%;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 
 
 /*////////////////////////////////////////////////////////////*/
@@ -67,6 +97,16 @@ header nav a img {
 main{
     background-color: #ebebeb;
     margin: auto;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
 
 h3 {
@@ -194,6 +234,10 @@ footer section p {
 
 }
 
+footer .fas:hover {
+    color: #0022AA;
+}
+
 /*////////////////////////////////////////////////////////////*/
 /*/////////////////// MEDIA QUERIES //////////////////////////*/
 /*////////////////////////////////////////////////////////////*/
@@ -211,6 +255,9 @@ footer section p {
         width: 50%;
     }
 
+    .search-bar{
+        width: 30%;
+    }
     .descripciones{
         display: none;
     }
@@ -297,8 +344,19 @@ footer section p {
     .item-footer{
         width: 40%;
     }
+
+
+    .campo-reg{
+        width: 40%;
+    }
+
+    .botones{
+        width: 40%;
+    }
     
 }
+    
+
 
 @media (min-width: 992px){
 
@@ -347,4 +405,133 @@ footer section p {
         width: 30%;
     }
 
+}
+
+
+
+/*////////////////////////////////////////////////////////////*/
+/*//////////////////////// LOGIN /////////////////////////////*/
+/*////////////////////////////////////////////////////////////*/
+
+.main-login {
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+.formulario-login {
+    width: 70%;
+    margin: 1rem 0;
+}
+
+.campo {
+    display: block;
+    margin-bottom: 2rem;
+    padding-left: 0.75rem;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+.campo input {
+    /* width: 100%; */
+    /* height: 100%; */
+    padding: 0.75rem 0;
+}
+
+input {
+    display: block;
+}
+button, input {
+    border: none;
+    background-image: none;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.boton-entrar button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #03264C;
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+/*////////////////////////////////////////////////////////////*/
+/*//////////////////////// REGISTER //////////////////////////*/
+/*////////////////////////////////////////////////////////////*/
+
+.campo-reg {
+    display: block;
+    margin-bottom: 2rem;
+    padding-left: 0.75rem;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+.campo-reg input {
+    width: 100%;
+    height: 100%;
+    padding: 0.75rem 0;
+}
+
+.mainmain {
+        background-color: #ebebeb;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 1rem 0;
+    
+}
+
+.checkboxes div input {
+    display: inline;
+    margin: 1rem;
+}
+
+.birth input {
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+.birth {
+    margin-bottom: 2rem
+}
+
+.foto-usuario{
+    margin-bottom: 2rem
+}
+
+.boton-registrarse button, .boton-borrar-todo button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #03264C;
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botones {
+    width: 40%;
+}
+
+.boton-registrarse:hover button, .boton-borrar-todo:hover button{
+    background-color: #0022AA;
+    cursor: pointer;
+}
+
+input{
+    display: block;
 }
